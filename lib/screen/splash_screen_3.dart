@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:kb1179_1123150006_uts/screen/splash_screen_3.dart';
+import 'package:kb1179_1123150006_uts/screen/login.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -21,7 +21,7 @@ class SplashScreen3 extends StatelessWidget {
                 color: Colors.cyan,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/image2.png'),
+                  image: AssetImage('assets/images/image3.png'),
                 ),
               ),
             ),
@@ -32,7 +32,7 @@ class SplashScreen3 extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              'Don\'t worry! we got your cover. Use Wallie instead of cash!',
+              'Let\'s Try Wallie now ! And get the best solution!',
               style: TextStyle(fontSize: 20, color: Colors.cyan[700]),
             ),
             SizedBox(height: 50),
@@ -53,7 +53,7 @@ class SplashScreen3 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.cyan,
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -62,7 +62,7 @@ class SplashScreen3 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.grey,
+                    color: Colors.cyan,
                   ),
                 ),
               ],
@@ -77,12 +77,12 @@ class SplashScreen3 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                      MaterialPageRoute(builder: (context) => LoginScreen()),
                     );
                   },
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
                   child: Text(
-                    'Continue',
+                    'Get Started',
                     style: TextStyle(fontSize: 14.0, color: Colors.white),
                   ),
                 ),
