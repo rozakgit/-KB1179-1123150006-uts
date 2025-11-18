@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kb1179_1123150006_uts/screen/splash_screen_2.dart';
+import 'package:kb1179_1123150006_uts/screen/splash_screen_3.dart';
 
 class SplashScreen2 extends StatelessWidget {
   const SplashScreen2({super.key});
@@ -21,7 +21,7 @@ class SplashScreen2 extends StatelessWidget {
                 color: Colors.cyan,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/image1.png'),
+                  image: AssetImage('assets/images/image2.png'),
                 ),
               ),
             ),
@@ -32,7 +32,7 @@ class SplashScreen2 extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              'Forgot to bring your wallet when you are shopping?',
+              'Don\'t worry! we got your cover. Use Wallie instead of cash!',
               style: TextStyle(fontSize: 20, color: Colors.cyan[700]),
             ),
             SizedBox(height: 50),
@@ -44,7 +44,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.cyan,
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -53,7 +53,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.grey,
+                    color: Colors.cyan,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -77,7 +77,7 @@ class SplashScreen2 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen2()),
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
                     );
                   },
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
