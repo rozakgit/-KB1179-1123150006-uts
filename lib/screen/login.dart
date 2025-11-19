@@ -5,6 +5,20 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            padding: const EdgeInsets.all(20.0),
+            child: const Column(
+              children: [
+                SizedBox(height: 10),
+                Icon(Icons.lock_outlined, size: 80, color: Colors.cyan),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
