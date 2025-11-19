@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(20.0),
-            child: const Column(
+            child: Column(
               children: [
                 SizedBox(height: 10),
                 Icon(Icons.lock_outlined, size: 80, color: Colors.cyan),
@@ -23,6 +23,26 @@ class LoginScreen extends StatelessWidget {
                 Text(
                   'Silahkan login untuk melanjutkan',
                   style: TextStyle(fontSize: 15, color: Colors.deepPurple),
+                ),
+                SizedBox(height: 50),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.email_outlined),
+                    label: Text("Email"),
+                    hint: Text("Masukkan email Anda"),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(
+                        color: Colors.cyan[700]!,
+                        width: 2,
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
